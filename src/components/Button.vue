@@ -1,15 +1,39 @@
 <script setup lang="ts">
-interface ButtonProps {
-  label: string;
-  iconPath?: string;
-  //   size: {default: "small"; large: "large"}
+import { defineProps } from "vue";
+
+// interface ButtonProps {
+//   label: string;
+//   iconPath?: string;
+//   size: {
+//     type: Number;
+//     default: 1;
+//     validator: (value: number) => [1, 2, 3, 4].includes(value as 1|2|3|4);,
+//   };
+// }
+
+function classArray(): string {
+  return `size-${props.size}`;
 }
-defineProps<ButtonProps>();
+
+const props = defineProps({
+  label: {
+    type: String,
+  },
+  iconPath: {
+    type: String,
+    required: false,
+  },
+  size: {
+    type: Number,
+    default: 1,
+    validator: (value: number) => [1, 2, 3, 4].includes(value as 1 | 2 | 3 | 4),
+  },
+});
 </script>
 
 <template>
   <div class="flex-auto flex-row">
-    <button type="button" class="flex flex-row items-center">
+    <button type="button" class="flex flex-row items-center" :size="classArray">
       {{ label }}
       <span v-if="iconPath" class="ml-4">
         <svg

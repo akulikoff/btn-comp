@@ -32,21 +32,23 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex-auto flex-row">
-    <button type="button" class="flex flex-row items-center" :size="classArray">
-      {{ label }}
-      <span v-if="iconPath" class="ml-4">
-        <svg
-          aria-hidden="true"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-6 h-6"
-        >
-          <path :d="iconPath"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
+  <button
+    type="button"
+    class="flex flex-row items-center gap-2 px-4 py-4"
+    :size="classArray"
+  >
+    <span v-if="label" class="">{{ label }}</span>
+    <span v-if="iconPath" class="">
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-6 h-6"
+      >
+        <path :d="iconPath"></path>
+      </svg>
+    </span>
+  </button>
 </template>
 
 <style scoped>

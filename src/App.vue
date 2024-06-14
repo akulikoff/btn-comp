@@ -9,7 +9,153 @@ const data = {
 </script>
 
 <template>
-  <Button :icon-path="data.iconPath" :label="data.label" :size="2"></Button>
+  <div class="flex flex-col gap-12">
+    <div class="flex flex-row gap-4">
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+    </div>
+    <div class="flex flex-row gap-4">
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+    </div>
+    <div class="flex flex-row gap-4">
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+    </div>
+    <div class="flex flex-row gap-4">
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+    </div>
+    <div class="flex flex-row gap-4">
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+    </div>
+  </div>
 </template>
 
 <style scoped>

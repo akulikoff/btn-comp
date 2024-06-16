@@ -40,12 +40,18 @@ const data = {
       ></Button>
     </div> -->
     <div class="flex flex-row gap-4">
-      <Button :label="data.label" :size="2"></Button>
+      <Button
+        :label="data.label"
+        :size="2"
+        :bg-color="`indigo-500`"
+        :color="`white`"
+      ></Button>
       <Button
         :icon-path="data.iconPath"
         :label="data.label"
         :size="2"
-        class="bg-[#7c3aed] text-white"
+        :bg-color="`indigo-500`"
+        :color="`white`"
       ></Button>
       <!-- 
       <Button

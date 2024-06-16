@@ -1,17 +1,8 @@
 <script setup lang="ts">
 import { defineProps, computed } from "vue";
 
-// interface ButtonProps {
-//   label: string;
-//   iconPath?: string;
-//   size: {
-//     type: Number;
-//     default: 1;
-//     validator: (value: number) => [1, 2, 3, 4].includes(value as 1|2|3|4);,
-//   };
-// }
 type IconPos<T extends "left" | "right"> = T;
-
+type ColorType<T extends "indigo-500" | "slate-100" | "red-500" | "white"> = T;
 const classArray = computed((): string[] => {
   return [`size-${props.size}`, `text-${props.color}`, `bg-${props.bgColor}`];
 });
@@ -36,14 +27,18 @@ const props = defineProps({
     validator: (value: number) => [1, 2, 3, 4].includes(value as 1 | 2 | 3 | 4),
   },
   bgColor: {
-    type: String,
+    type: String as () => ColorType<
+      "indigo-500" | "slate-100" | "red-500" | "white"
+    >,
     required: true,
     default: "indigo-500",
   },
   color: {
-    type: String,
+    type: String as () => ColorType<
+      "indigo-500" | "slate-100" | "red-500" | "white"
+    >,
     required: true,
-    default: "#fff",
+    default: "#white",
   },
 });
 </script>

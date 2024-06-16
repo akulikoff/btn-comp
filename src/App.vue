@@ -10,7 +10,7 @@ const data = {
 
 <template>
   <div class="flex flex-col gap-12">
-    <div class="flex flex-row gap-4">
+    <!-- <div class="flex flex-row gap-4">
       <Button
         :label="data.label"
         :size="2"
@@ -22,6 +22,32 @@ const data = {
         :size="2"
         class="bg-[#7c3aed] text-white"
       ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+    </div> -->
+    <div class="flex flex-row gap-4">
+      <Button :label="data.label" :size="2"></Button>
+      <Button
+        :icon-path="data.iconPath"
+        :label="data.label"
+        :size="2"
+        class="bg-[#7c3aed] text-white"
+      ></Button>
+      <!-- 
       <Button
         :icon-path="data.iconPath"
         :label="data.label"
@@ -124,36 +150,7 @@ const data = {
         :icon-path="data.iconPath"
         :size="2"
         class="bg-[#7c3aed] text-white"
-      ></Button>
-    </div>
-    <div class="flex flex-row gap-4">
-      <Button
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
+      ></Button> -->
     </div>
   </div>
 </template>

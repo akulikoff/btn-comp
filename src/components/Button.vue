@@ -1,13 +1,50 @@
 <script setup lang="ts">
 import { defineProps, computed } from "vue";
 
-type IconPos<T extends "left" | "right"> = T;
-type ColorType<T extends "indigo-500" | "slate-100" | "red-500" | "white"> = T;
+type IconPos = "left" | "right";
+type ColorType<T extends "indigo-700" | "stone-700" | "red-500" | "white"> = T;
+type ButtonShadow = "shadow-md" | "shadow-lg" | "shadow-xl" | "shadow-2xl";
+type FontSize<
+  T extends
+    | "text-sm"
+    | "text-base"
+    | "text-lg"
+    | "text-xl"
+    | "text-2xl"
+    | "text-3xl"
+> = T;
+enum ButtonSize {
+  "leading-1" = 1,
+  "leading-2" = 2,
+  "leading-3" = 3,
+  "leading-4" = 4,
+  "leading-5" = 5,
+  "leading-6" = 6,
+  "leading-7" = 7,
+  "leading-8" = 8,
+  "leading-9" = 9,
+  "leading-10" = 10,
+  "leading-tight" = 11,
+  "leading-snug" = 12,
+  "leading-normal" = 13,
+  "leading-relaxed" = 14,
+  "leading-loose" = 15,
+}
 const classArray = computed((): string[] => {
-  return [`size-${props.size}`, `text-${props.color}`, `bg-${props.bgColor}`];
+  return [
+    `leading-${props.lineHeight}`,
+    `text-${props.color}`,
+    `bg-${props.bgColor}`,
+    `${props.fontSize}`,
+    `size-${props.size}`,
+    `${props.shadow}`,
+  ];
 });
+// const BtnSizeSquare = computed(() => {
+//   if (!props.label) return `w-24 h-24`;
+// });
 const iconPosition = computed(() => {
-  return props.iconPosition ? "order-first" : "order-last";
+  return props.iconPosition === "left" ? "order-first" : "order-last";
 });
 const props = defineProps({
   label: {
@@ -18,27 +55,38 @@ const props = defineProps({
     required: false,
   },
   iconPosition: {
-    type: String as () => IconPos<"left" | "right">,
+    type: String as () => IconPos,
     default: "left",
   },
-  size: {
-    type: Number,
+  lineHeight: {
+    type: Number as () => ButtonSize,
     default: 4,
-    validator: (value: number) => [1, 2, 3, 4].includes(value as 1 | 2 | 3 | 4),
   },
   bgColor: {
     type: String as () => ColorType<
-      "indigo-500" | "slate-100" | "red-500" | "white"
+      "indigo-700" | "stone-700" | "red-500" | "white"
     >,
     required: true,
-    default: "indigo-500",
+    default: "indigo-700",
   },
   color: {
     type: String as () => ColorType<
-      "indigo-500" | "slate-100" | "red-500" | "white"
+      "indigo-700" | "stone-700" | "red-500" | "white"
     >,
     required: true,
-    default: "#white",
+    default: "white",
+  },
+  size: {
+    type: Number,
+  },
+  fontSize: {
+    type: String as () => FontSize<
+      "text-sm" | "text-base" | "text-lg" | "text-xl" | "text-2xl" | "text-3xl"
+    >,
+    default: "text-sm",
+  },
+  shadow: {
+    type: String as () => ButtonShadow,
   },
 });
 </script>
@@ -46,10 +94,10 @@ const props = defineProps({
 <template>
   <button
     type="button"
-    class="flex flex-row items-center gap-2 px-4 min-w-max"
+    class="flex flex-row justify-center items-center gap-6 min-w-max rounded"
     :class="classArray"
   >
-    <span v-if="label" class="">{{ label }}</span>
+    <span v-if="label">{{ label }}</span>
     <span v-if="iconPath" :class="iconPosition">
       <svg
         aria-hidden="true"

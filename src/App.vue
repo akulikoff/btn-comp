@@ -9,154 +9,251 @@ const data = {
 </script>
 
 <template>
-  <div class="flex flex-col gap-12">
-    <!-- <div class="flex flex-row gap-4">
+  <div class="flex flex-col gap-20">
+    <div class="flex flex-row items-center gap-8 font-normal">
       <Button
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :lineHeight="9"
+        :font-size="`text-xl`"
+        :bg-color="`indigo-700`"
+        :color="`white`"
       ></Button>
       <Button
+        :label="data.label"
         :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :icon-position="`left`"
+        :font-size="`text-2xl`"
+        :lineHeight="1"
+        :bg-color="`indigo-700`"
+        :color="`white`"
       ></Button>
       <Button
+        :label="data.label"
         :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :icon-position="`right`"
+        :font-size="`text-2xl`"
+        :lineHeight="9"
+        :bg-color="`indigo-700`"
+        :color="`white`"
       ></Button>
       <Button
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-    </div> -->
-    <div class="flex flex-row gap-4">
-      <Button
-        :label="data.label"
-        :size="2"
-        :bg-color="`indigo-500`"
+        :font-size="`text-3xl`"
+        :lineHeight="15"
+        :bg-color="`indigo-700`"
         :color="`white`"
       ></Button>
       <Button
         :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        :bg-color="`indigo-500`"
+        :size="20"
+        :bg-color="`indigo-700`"
         :color="`white`"
       ></Button>
-      <!-- 
+    </div>
+    <div class="flex flex-row items-center gap-8 font-medium">
       <Button
-        :icon-path="data.iconPath"
+        :shadow="`shadow-md`"
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :lineHeight="9"
+        :font-size="`text-xl`"
+        :bg-color="`white`"
+        :color="`stone-700`"
       ></Button>
       <Button
+        :shadow="`shadow-md`"
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :icon-path="data.iconPath"
+        :icon-position="`left`"
+        :font-size="`text-2xl`"
+        :lineHeight="1"
+        :bg-color="`white`"
+        :color="`stone-700`"
       ></Button>
       <Button
+        :shadow="`shadow-md`"
+        :label="data.label"
         :icon-path="data.iconPath"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :icon-position="`right`"
+        :font-size="`text-2xl`"
+        :lineHeight="9"
+        :bg-color="`white`"
+        :color="`stone-700`"
+      ></Button>
+      <Button
+        :shadow="`shadow-md`"
+        :label="data.label"
+        :font-size="`text-3xl`"
+        :lineHeight="15"
+        :bg-color="`white`"
+        :color="`stone-700`"
+      ></Button>
+      <Button
+        :shadow="`shadow-md`"
+        :icon-path="data.iconPath"
+        :size="20"
+        :bg-color="`white`"
+        :color="`stone-700`"
       ></Button>
     </div>
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-row items-center gap-8 font-medium">
       <Button
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :lineHeight="9"
+        :font-size="`text-xl`"
+        :bg-color="`white`"
+        :color="`indigo-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`left`"
+        :font-size="`text-2xl`"
+        :lineHeight="1"
+        :bg-color="`white`"
+        :color="`indigo-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`right`"
+        :font-size="`text-2xl`"
+        :lineHeight="9"
+        :bg-color="`white`"
+        :color="`indigo-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :font-size="`text-3xl`"
+        :lineHeight="15"
+        :bg-color="`white`"
+        :color="`indigo-700`"
       ></Button>
       <Button
         :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :size="20"
+        :bg-color="`white`"
+        :color="`indigo-700`"
       ></Button>
     </div>
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-row items-start gap-2 font-medium">
       <Button
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :lineHeight="9"
+        :font-size="`text-xl`"
+        :bg-color="`white`"
+        :color="`indigo-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`left`"
+        :font-size="`text-2xl`"
+        :lineHeight="1"
+        :bg-color="`white`"
+        :color="`indigo-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`right`"
+        :font-size="`text-2xl`"
+        :lineHeight="9"
+        :bg-color="`white`"
+        :color="`indigo-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :font-size="`text-3xl`"
+        :lineHeight="15"
+        :bg-color="`white`"
+        :color="`indigo-700`"
       ></Button>
       <Button
         :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :size="20"
+        :bg-color="`white`"
+        :color="`indigo-700`"
       ></Button>
     </div>
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-row items-start gap-2 font-medium">
       <Button
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :lineHeight="9"
+        :font-size="`text-xl`"
+        :bg-color="`white`"
+        :color="`stone-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`left`"
+        :font-size="`text-2xl`"
+        :lineHeight="1"
+        :bg-color="`white`"
+        :color="`stone-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`right`"
+        :font-size="`text-2xl`"
+        :lineHeight="9"
+        :bg-color="`white`"
+        :color="`stone-700`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :font-size="`text-3xl`"
+        :lineHeight="15"
+        :bg-color="`white`"
+        :color="`stone-700`"
       ></Button>
       <Button
         :icon-path="data.iconPath"
+        :size="20"
+        :bg-color="`white`"
+        :color="`stone-700`"
+      ></Button>
+    </div>
+    <div class="flex flex-row items-center gap-8 font-normal">
+      <Button
         :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :lineHeight="9"
+        :font-size="`text-xl`"
+        :bg-color="`red-500`"
+        :color="`white`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`left`"
+        :font-size="`text-2xl`"
+        :lineHeight="1"
+        :bg-color="`red-500`"
+        :color="`white`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :icon-path="data.iconPath"
+        :icon-position="`right`"
+        :font-size="`text-2xl`"
+        :lineHeight="9"
+        :bg-color="`red-500`"
+        :color="`white`"
+      ></Button>
+      <Button
+        :label="data.label"
+        :font-size="`text-3xl`"
+        :lineHeight="15"
+        :bg-color="`red-500`"
+        :color="`white`"
       ></Button>
       <Button
         :icon-path="data.iconPath"
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
+        :size="20"
+        :bg-color="`red-500`"
+        :color="`white`"
       ></Button>
-      <Button
-        :label="data.label"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button>
-      <Button
-        :icon-path="data.iconPath"
-        :size="2"
-        class="bg-[#7c3aed] text-white"
-      ></Button> -->
     </div>
   </div>
 </template>

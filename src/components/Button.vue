@@ -40,9 +40,6 @@ const classArray = computed((): string[] => {
     `${props.shadow}`,
   ];
 });
-// const BtnSizeSquare = computed(() => {
-//   if (!props.label) return `w-24 h-24`;
-// });
 const iconPosition = computed(() => {
   return props.iconPosition === "left" ? "order-first" : "order-last";
 });
@@ -111,14 +108,4 @@ const props = defineProps({
   </button>
 </template>
 
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-.size-1 {
-  height: 20px;
-}
-.size-2 {
-  height: 48px;
-}
-</style>
+<style scoped></style>

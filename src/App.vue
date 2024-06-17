@@ -10,7 +10,7 @@ const data = {
 
 <template>
   <div class="flex flex-col gap-20">
-    <div class="flex flex-row items-center gap-8 font-normal">
+    <div class="flex flex-row flex-wrap items-center gap-8 font-normal">
       <Button
         :label="data.label"
         :lineHeight="9"
@@ -50,7 +50,7 @@ const data = {
         :color="`white`"
       ></Button>
     </div>
-    <div class="flex flex-row items-center gap-8 font-medium">
+    <div class="flex flex-row flex-wrap items-center gap-8 font-medium">
       <Button
         :shadow="`shadow-md`"
         :label="data.label"
@@ -95,7 +95,7 @@ const data = {
         :color="`stone-700`"
       ></Button>
     </div>
-    <div class="flex flex-row items-center gap-8 font-medium">
+    <div class="flex flex-row flex-wrap items-center gap-8 font-medium">
       <Button
         :label="data.label"
         :lineHeight="9"
@@ -135,7 +135,7 @@ const data = {
         :color="`indigo-700`"
       ></Button>
     </div>
-    <div class="flex flex-row items-start gap-2 font-medium">
+    <div class="flex flex-row flex-wrap items-start gap-2 font-medium">
       <Button
         :label="data.label"
         :lineHeight="9"
@@ -175,7 +175,7 @@ const data = {
         :color="`indigo-700`"
       ></Button>
     </div>
-    <div class="flex flex-row items-start gap-2 font-medium">
+    <div class="flex flex-row flex-wrap items-start gap-2 font-medium">
       <Button
         :label="data.label"
         :lineHeight="9"
@@ -215,7 +215,7 @@ const data = {
         :color="`stone-700`"
       ></Button>
     </div>
-    <div class="flex flex-row items-center gap-8 font-normal">
+    <div class="flex flex-row flex-wrap items-center gap-8 font-normal">
       <Button
         :label="data.label"
         :lineHeight="9"
@@ -258,17 +258,4 @@ const data = {
   </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>

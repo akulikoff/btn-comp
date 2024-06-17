@@ -38,6 +38,7 @@ const classArray = computed((): string[] => {
     `${props.fontSize}`,
     `size-${props.size}`,
     `${props.shadow}`,
+    `py-${props.height}`,
   ];
 });
 const iconPosition = computed(() => {
@@ -73,6 +74,9 @@ const props = defineProps({
     required: true,
     default: "white",
   },
+  height: {
+    type: Number,
+  },
   size: {
     type: Number,
   },
@@ -91,7 +95,7 @@ const props = defineProps({
 <template>
   <button
     type="button"
-    class="flex flex-row justify-center items-center gap-6 min-w-max rounded"
+    class="flex flex-row justify-center items-center gap-6 px-5 min-w-max rounded"
     :class="classArray"
   >
     <span v-if="label">{{ label }}</span>

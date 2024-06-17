@@ -13,6 +13,7 @@ const data = {
     <div class="flex flex-row flex-wrap items-center gap-8 font-normal">
       <Button
         :label="data.label"
+        :height="3"
         :lineHeight="9"
         :font-size="`text-xl`"
         :bg-color="`indigo-700`"
@@ -20,6 +21,7 @@ const data = {
       ></Button>
       <Button
         :label="data.label"
+        :height="4"
         :icon-path="data.iconPath"
         :icon-position="`left`"
         :font-size="`text-2xl`"
@@ -29,6 +31,7 @@ const data = {
       ></Button>
       <Button
         :label="data.label"
+        :height="5"
         :icon-path="data.iconPath"
         :icon-position="`right`"
         :font-size="`text-2xl`"
@@ -38,6 +41,7 @@ const data = {
       ></Button>
       <Button
         :label="data.label"
+        :height="7"
         :font-size="`text-3xl`"
         :lineHeight="15"
         :bg-color="`indigo-700`"
@@ -54,6 +58,7 @@ const data = {
       <Button
         :shadow="`shadow-md`"
         :label="data.label"
+        :height="3"
         :lineHeight="9"
         :font-size="`text-xl`"
         :bg-color="`white`"
@@ -62,6 +67,7 @@ const data = {
       <Button
         :shadow="`shadow-md`"
         :label="data.label"
+        :height="4"
         :icon-path="data.iconPath"
         :icon-position="`left`"
         :font-size="`text-2xl`"
@@ -72,6 +78,7 @@ const data = {
       <Button
         :shadow="`shadow-md`"
         :label="data.label"
+        :height="5"
         :icon-path="data.iconPath"
         :icon-position="`right`"
         :font-size="`text-2xl`"
@@ -82,6 +89,7 @@ const data = {
       <Button
         :shadow="`shadow-md`"
         :label="data.label"
+        :height="7"
         :font-size="`text-3xl`"
         :lineHeight="15"
         :bg-color="`white`"
@@ -135,7 +143,7 @@ const data = {
         :color="`indigo-700`"
       ></Button>
     </div>
-    <div class="flex flex-row flex-wrap items-start gap-2 font-medium">
+    <div class="flex flex-row flex-wrap items-center gap-2 font-medium">
       <Button
         :label="data.label"
         :lineHeight="9"
@@ -175,7 +183,7 @@ const data = {
         :color="`indigo-700`"
       ></Button>
     </div>
-    <div class="flex flex-row flex-wrap items-start gap-2 font-medium">
+    <div class="flex flex-row flex-wrap items-center gap-2 font-medium">
       <Button
         :label="data.label"
         :lineHeight="9"
@@ -218,6 +226,7 @@ const data = {
     <div class="flex flex-row flex-wrap items-center gap-8 font-normal">
       <Button
         :label="data.label"
+        :height="3"
         :lineHeight="9"
         :font-size="`text-xl`"
         :bg-color="`red-500`"
@@ -225,6 +234,7 @@ const data = {
       ></Button>
       <Button
         :label="data.label"
+        :height="4"
         :icon-path="data.iconPath"
         :icon-position="`left`"
         :font-size="`text-2xl`"
@@ -234,6 +244,7 @@ const data = {
       ></Button>
       <Button
         :label="data.label"
+        :height="5"
         :icon-path="data.iconPath"
         :icon-position="`right`"
         :font-size="`text-2xl`"
@@ -243,6 +254,7 @@ const data = {
       ></Button>
       <Button
         :label="data.label"
+        :height="7"
         :font-size="`text-3xl`"
         :lineHeight="15"
         :bg-color="`red-500`"
